@@ -23,7 +23,7 @@ body::before {
 }
 
 .section h2 {
-  color: #f1c40f; /* doré */
+  color: #ffffff; /* blanc */
   text-align: center;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
@@ -55,7 +55,7 @@ body::before {
 }
 
 .card h3 {
-  color: #f1c40f; /* doré */
+  color: #ffffff; /* blanc */
 }
 
 .price {
@@ -105,8 +105,4 @@ body::before {
   padding: 20px;
   border-radius: 12px;
   width: 80%;
-  max-width: 500px;
-  color: #fff;
-}
-
-.close {
+  max-width: 500px
