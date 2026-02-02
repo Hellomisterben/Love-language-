@@ -47,12 +47,12 @@ body::before {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.85); /* translucide pour lisibilité */
+  background: rgba(192, 57, 43, 0.85); /* rouge translucide pour lisibilité */
   border-radius: 12px;
   padding: 15px;
   width: 320px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   cursor: pointer;
   transition: transform 0.2s ease;
 }
@@ -63,12 +63,13 @@ body::before {
 
 .price {
   font-weight: bold;
-  color: #c0392b;
+  color: #fff; /* texte en blanc pour contraster avec le rouge */
 }
 
 /* Section et footer translucides */
 .section, .modal-content, footer {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(192, 57, 43, 0.85); /* rouge translucide */
   border-radius: 12px;
   padding: 20px;
+  color: #fff; /* texte en blanc pour lisibilité */
 }
