@@ -2,6 +2,7 @@ body {
   background: url("https://raw.githubusercontent.com/Hellomisterben/Love-language-/refs/heads/main/IMG_8486.png") no-repeat center center fixed;
   background-size: cover;
   position: relative;
+  color: #fff; /* texte blanc par défaut */
 }
 
 body::before {
@@ -19,6 +20,12 @@ body::before {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.section h2 {
+  color: #f1c40f; /* doré */
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
 .product-img {
@@ -39,7 +46,7 @@ body::before {
 }
 
 .card {
-  background: rgba(192, 57, 43, 0.85);
+  background: rgba(192, 57, 43, 0.85); /* rouge passion */
   border-radius: 12px;
   padding: 15px;
   width: 320px;
@@ -47,9 +54,13 @@ body::before {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.card h3 {
+  color: #f1c40f; /* doré */
+}
+
 .price {
   font-weight: bold;
-  color: #fff;
+  color: #ffffff; /* blanc */
 }
 
 .btn-order, .btn-desc {
@@ -62,13 +73,21 @@ body::before {
 }
 
 .btn-order {
-  background-color: #e74c3c;
+  background-color: #e74c3c; /* rouge vif */
   color: #fff;
 }
 
+.btn-order:hover {
+  background-color: #c0392b; /* rouge foncé */
+}
+
 .btn-desc {
-  background-color: #3498db;
+  background-color: #2980b9; /* bleu doux */
   color: #fff;
+}
+
+.btn-desc:hover {
+  background-color: #1f6391; /* bleu foncé */
 }
 
 .modal {
@@ -91,22 +110,3 @@ body::before {
 }
 
 .close {
-  float: right;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.desc-content {
-  max-width: 700px;
-}
-
-.desc-body {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.desc-img {
-  width: 250px;
-  border-radius: 10px;
-}
