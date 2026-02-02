@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Language – Saint-Valentin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>Love Language 🌹</h1>
+  <p>There's nothing better than <strong>LOVE</strong></p>
+</header>
+
+<section class="section">
+  <h2>🌹 Nos produits – Saint-Valentin</h2>
+
+  <div class="cards">
+
+    <div class="card" onclick="openModal(
+      'Bouquet de 12 Roses',
+      '54 $',
+      'Amour parfait – Un classique qui exprime un amour profond et sincère.'
+    )">
+      <h3>12 Roses</h3>
+      <p class="price">54 $</p>
+      <small>Amour parfait</small>
+    </div>
+
+    <div class="card" onclick="openModal(
+      'Bouquet de 18 Roses',
+      '81 $',
+      'Amour éternel – Symbole de fidélité et d’engagement fort.'
+    )">
+      <h3>18 Roses</h3>
+      <p class="price">81 $</p>
+      <small>Amour éternel</small>
+    </div>
+
+    <div class="card" onclick="openModal(
+      'Panier Gourmand',
+      '90 $',
+      'Assortiment de chocolats exquis accompagné d’une bouteille de vin.'
+    )">
+      <h3>Panier Gourmand</h3>
+      <p class="price">90 $</p>
+      <small>Chocolats & vin</small>
+    </div>
+
+    <div class="card" onclick="openModal(
+      'Le Love Language',
+      '195 $',
+      'Chocolats fins, vin, champagne, peluche et cartes pour une déclaration complète.'
+    )">
+      <h3>Le Love Language</h3>
+      <p class="price">195 $</p>
+      <small>Coffret prestige</small>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL COMMANDE -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2 id="productName"></h2>
+    <p id="productPrice"></p>
+    <p id="productDesc"></p>
+
+    <input type="text" id="clientName" placeholder="Votre nom">
+    <input type="email" id="clientEmail" placeholder="Votre adresse e-mail">
+
+    <button onclick="orderWhatsApp()">Commander via WhatsApp</button>
+  </div>
+</div>
+
+<footer>
+  <p>📞 WhatsApp : +243 89 11 22 145</p>
+  <p>📅 Commandes du 26 janvier au 14 février 2026 à 10h</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
